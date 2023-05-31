@@ -34,7 +34,11 @@ const Navbar = () => {
           <div className="header-left">
             <div className="header-logo">
               <Link className="d-flex" to="/">
-                <img src="assets/images/logo.png" alt="logo" />
+                <img
+                  style={{ maxWidth: "50px" }}
+                  src="logo_coral.png"
+                  alt="logo"
+                />
               </Link>
             </div>
             <div className="header-nav">
@@ -62,9 +66,11 @@ const Navbar = () => {
               </nav>
             </div>
             <div className="header-right">
-                <div className="d-none d-sm-inline-block">
-                    <Link className="btn btn-brand-1 hover-up" to="/register">Get Started</Link>
-                </div>
+              <div className="d-none d-sm-inline-block">
+                <Link className="btn btn-brand-1 hover-up" to="/register">
+                  Book a Demo
+                </Link>
+              </div>
             </div>
           </div>
         </div>

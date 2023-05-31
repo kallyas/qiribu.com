@@ -943,7 +943,7 @@ body {
   transition-duration: 0.2s;
 }
 .btn.btn-play {
-  background: url(../imgs/page/homepage1/btn-play.svg) no-repeat left center;
+  background: url(../btn-play.svg) no-repeat left center;
   height: 50px;
   padding-left: 55px;
   color: #FFE7BB;

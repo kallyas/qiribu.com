@@ -9,7 +9,11 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3 width-20">
               <div className="mb-10">
-                <img src="assets/imgs/template/logo.svg" alt="Qiribu" />
+                <img
+                  style={{ maxWidth: "50px" }}
+                  src="logo_coral.png"
+                  alt="Qiribu"
+                />
               </div>
               <p className="font-md mb-20 color-grey-400">
                 4517 Washington Ave.
@@ -102,18 +106,17 @@ const Footer = () => {
               <h5 className="mb-10 color-brand-1">App &amp; Payment</h5>
               <div>
                 <p className="font-sm color-grey-400">
-                  Download our Apps and get extra 15% Discount on your first
-                  Order…!
+                  Download our Apps and enjoy the best Qiribu experience. <br />
                 </p>
                 <div className="mt-20">
                   <Link className="mr-10" to="#">
-                    <img src="assets/imgs/template/appstore.png" alt="iori" />
+                    <img src="appstore.png" alt="Qiribu" />
                   </Link>
-                  <Link to="#">
-                    <img
-                      src="assets/imgs/template/google-play.png"
-                      alt="iori"
-                    />
+                  <Link
+                    target="_blank"
+                    to="https://play.google.com/store/apps/details?id=com.qiribu"
+                  >
+                    <img src="google-play.png" alt="Qiribu" />
                   </Link>
                 </div>
               </div>
