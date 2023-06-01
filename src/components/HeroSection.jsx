@@ -15,15 +15,20 @@ const HeroSection = () => {
               <div className="row">
                 <div className="col-lg-9 wow animate__ animate__fadeInUp animated">
                   <div className="font-md color-grey-500 mb-30">
-                    Qiribu offers earned wage access, streamlined payroll
-                    processes, and a comprehensive HR dashboard. With us, you
-                    can improve employee satisfaction and save valuable time so
-                    you can focus on your growing your business.
+                    Unlock earned wage access, streamlined payroll processes,
+                    and a comprehensive HR dashboard with Qiribu. Enhance
+                    employee satisfaction and save time to prioritise business
+                    growth. Explore our solutions now for a seamless employee
+                    experience.
                   </div>
                 </div>
               </div>
               <div className="box-button mt-30 wow animate__ animate__fadeInUp animated">
-                <Link to="#" className="btn btn-brand-1 hover-up">
+                <Link
+                  target="_bank"
+                  to="https://play.google.com/store/apps/details?id=com.qiribu&pli=1"
+                  className="btn btn-brand-1 hover-up"
+                >
                   Download the App
                 </Link>
                 <Link to="#" className="btn btn-default font-sm-bold hover-up">
@@ -32,7 +37,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="col-lg-5 d-none d-lg-block wow animate__ animate__fadeIn animated">
-              Infographic goes here
+              <img src="hero_image.png" alt="hero" />
             </div>
           </div>
         </div>

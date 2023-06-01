@@ -20,9 +20,8 @@ const PricingCard = ({ offer }) => {
         </div>
         <div className="box-day-trial">
           <span className="font-lg-bold color-brand-1">{price.split('-')[0]}</span>
-          <span className="font-md color-grey-500">-{price.split('-')[1]}</span>
           <br />
-          <span className="font-xs color-grey-500">{price.split('-')[2]}</span>
+          <span className="font-xs color-grey-500">{price.split('-')[1]}</span>
         </div>
         <div className="mt-30 mb-30">
           <ul className="list-ticks list-ticks-2">

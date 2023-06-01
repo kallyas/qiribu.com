@@ -10,15 +10,16 @@ const Footer = () => {
             <div className="col-lg-3 width-20">
               <div className="mb-10">
                 <img
-                  style={{ maxWidth: "50px" }}
-                  src="logo_coral.png"
-                  alt="Qiribu"
+                  src="logo_text_coral.svg"
+                  sizes="(max-width: 479px) 100vw, 479px"
+                  style={{ width: "100px" }}
+                  alt="logo"
                 />
               </div>
               <p className="font-md mb-20 color-grey-400">
-                4517 Washington Ave.
+                851 Serumaga Rd.
                 <br className="d-none d-lg-block" />
-                Manchester, Kentucky 39495
+                Kampala, Uganda
               </p>
               <div className="font-md mb-20 color-grey-400">
                 <strong className="font-md-bold">Hours:</strong> 8:00 - 17:00,
@@ -56,58 +57,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 width-16 mb-30">
-              <h5 className="mb-10 color-brand-1">Ressources</h5>
-              <ul className="menu-footer">
-                <li>
-                  <Link to="#">Project managemen</Link>
-                </li>
-                <li>
-                  <Link to="#">Solutions</Link>
-                </li>
-                <li>
-                  <Link to="#">Customers</Link>
-                </li>
-                <li>
-                  <Link to="#">News &amp; Events</Link>
-                </li>
-                <li>
-                  <Link to="#">Careers</Link>
-                </li>
-                <li>
-                  <Link to="#">Support</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 width-16 mb-30">
-              <h5 className="mb-10 color-brand-1">We offer</h5>
-              <ul className="menu-footer">
-                <li>
-                  <Link to="#">Project software</Link>
-                </li>
-                <li>
-                  <Link to="#">Resource software</Link>
-                </li>
-                <li>
-                  <Link to="#">Workflow automation</Link>
-                </li>
-                <li>
-                  <Link to="#">Gantt chart makers</Link>
-                </li>
-                <li>
-                  <Link to="#">Project dashboards</Link>
-                </li>
-                <li>
-                  <Link to="#">Task software</Link>
-                </li>
-              </ul>
-            </div>
+            <div className="col-lg-3 width-16 mb-30"></div>
+            <div className="col-lg-3 width-16 mb-30"></div>
             <div className="col-lg-3 width-23">
-              <h5 className="mb-10 color-brand-1">App &amp; Payment</h5>
               <div>
-                <p className="font-sm color-grey-400">
-                  Download our Apps and enjoy the best Qiribu experience. <br />
-                </p>
                 <div className="mt-20">
                   <Link className="mr-10" to="#">
                     <img src="appstore.png" alt="Qiribu" />

@@ -35,8 +35,9 @@ const Navbar = () => {
             <div className="header-logo">
               <Link className="d-flex" to="/">
                 <img
-                  style={{ maxWidth: "50px" }}
-                  src="logo_coral.png"
+                  src="logo_text_coral.svg"
+                  sizes="(max-width: 479px) 100vw, 479px"
+                  style={{ width: "100px" }}
                   alt="logo"
                 />
               </Link>

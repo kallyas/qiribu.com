@@ -17,28 +17,28 @@ const Home = () => {
       description:
         "Offer your employees instant access to their salaries at ZERO cost to you. This is not a cash advance or loan. Instead, employees gain access to a portion of their earned wages every day.",
       link: "/employers",
-      image: null,
+      image: "EWA.png",
     },
     {
       title: "Payroll Processing",
       description:
-        "Pay all your employees in a single action. Qiribu's streamlined payroll processing ensure on-time salary transfers and less hassle for you.",
+        "Streamline payroll processing for hassle-free salary transfers. Qiribu ensures on-time payments in a single action, saving you time and effort. Simplify your payroll management with our efficient solution.",
       link: "/employers",
-      image: "paroll.png",
+      image: "payroll.png",
     },
     {
       title: "HR Dashboards",
       description:
-        "Manage all your employees in a single, centralized dashboard that allows you to track leave, shifts, onboarding and payslips",
+        "Effortlessly manage your employees with our centralised HR dashboard. Track leave, shifts, onboarding, and payslips from one place. Stay organised, streamline processes, and enhance employee management efficiency.",
       link: "/employers",
-      image: "dashboard.svg",
+      image: "hr_dashboard.png",
     },
     {
-      title: "Financial Trainings",
+      title: "Financial Tools",
       description:
-        "Provide your employees with financial trainings and budgeting tools so that your staff can better understand and manage their finances",
+        "Equip your employees with financial training and budgeting tools. Empower them to understand and manage their finances better. Provide the resources they need for financial success and peace of mind.",
       link: "/employers",
-      image: "training.png",
+      image: "smart_budgets.png",
     },
   ];
 
@@ -88,18 +88,22 @@ const Home = () => {
                   }}
                 >
                   <SwiperSlide>
-                    <img
-                      style={{ maxWidth: "50px" }}
-                      src="https://starthubafrica.org/wp-content/uploads/2022/01/fav-1.png"
-                      alt="Starthub Africa"
-                    />
+                    <Link target="_blank" to="https://starthubafrica.org/">
+                      <img
+                        style={{ maxWidth: "50px" }}
+                        src="https://starthubafrica.org/wp-content/uploads/2022/01/fav-1.png"
+                        alt="Starthub Africa"
+                      />
+                    </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <img
-                      style={{ maxWidth: "50px" }}
-                      src="https://www.cabbily.com/images/logo512.png"
-                      alt="Cabbily"
-                    />
+                    <Link target="_blank" to="https://www.cabbily.com/">
+                      <img
+                        style={{ maxWidth: "50px" }}
+                        src="https://www.cabbily.com/images/logo512.png"
+                        alt="Cabbily"
+                      />
+                    </Link>
                   </SwiperSlide>
                 </Swiper>
               </div>
@@ -115,13 +119,7 @@ const Home = () => {
                 What we Offer
               </h2>
               <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
-                We offer the convenience and flexibility of Earned Wages On
-                Demand. <br />
-                With our service, you no longer have to wait for your regular
-                payday <br />
-                to access the money you've earned. Instead, you can access a
-                portion of <br /> your earned wages whenever you need them,
-                instantly and hassle-free.
+                We have the right solutions to suite businesses of any size.
               </p>
             </div>
             <div className="col-lg-4 col-md-4 text-md-end text-start">
@@ -153,22 +151,29 @@ const Home = () => {
                     clipPath: "polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%)",
                   }}
                 >
-                  <img className="d-block" src="video_thumb.jpg" alt="video" />
+                  <img
+                    className="d-block"
+                    src="employee_image.png"
+                    alt="video"
+                  />
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6">
                 <div className="box-info-video">
-                  <span className="btn btn-tag wow animate__ animate__fadeInUp animated"></span>
+                  <span className="btn btn-tag wow animate__ animate__fadeInUp animated">
+                    😊
+                  </span>
                   <h3 className="color-brand-2 mt-10 mb-15 wow animate__ animate__fadeInUp animated">
-                    A Better Way to Get Paid
+                    Instantly Access What You Have Earned - No Waiting, No
+                    Hidden Costs
                   </h3>
                   <p className="font-md color-white wow animate__ animate__fadeInUp animated">
-                    No need to wait till payday to cover life&apos;s unexpected
-                    expenses! Employees can instantly access a portion of their
-                    earned, daily wage at zero interest and no hidden costs.
-                    Qiribu offers this benefit at no cost to the employer, and
-                    employees pay only a minimal flat transaction fee to
-                    transfer funds to the account of the employee's choice...
+                    Don't wait for payday to handle unexpected expenses! Qiribu
+                    enables employees to instantly access a portion of their
+                    earned wage at zero interest and no hidden costs. Employers
+                    enjoy this free benefit, while employees pay a minimal fee
+                    for fund transfers. Boost performance, morale, and reduce
+                    turnover for business success.
                     <Link
                       to="https://www.benefitnews.com/opinion/earned-wage-access-the-most-important-benefit-in-a-post-covid-19-world"
                       target="_blank"

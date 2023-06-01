@@ -5,10 +5,9 @@ const PricingPlans = () => {
   const plans = [
     {
       title: "Qiribu Basic",
-      image: "basic.svg",
+      image: "basic_plan.png",
       description: "For small businesses",
-      price:
-        "FREE - Sign up & register your employees - No Credit Card Required",
+      price: "FREE - Sign up & register your employees No Credit Card Required",
       offer_list: [
         {
           text: "Earned Wages On Demand",
@@ -34,10 +33,10 @@ const PricingPlans = () => {
     },
     {
       title: "Qiribu Pro",
-      image: "pro.svg",
+      image: "pro_plan.png",
       description: "For medium businesses",
       price:
-        "UGX 50,000 per month - Up to 10 Employees, and - UGX 3,000 per additional employee",
+        "UGX 50,000/month - Up to 10 Employees, and UGX 3,000 per additional employee",
       offer_list: [
         {
           text: "Earned Wages On Demand",
@@ -66,7 +65,7 @@ const PricingPlans = () => {
       description: "For large businesses",
       image: "enterprise.png",
       price:
-        "UGX 100,000 per month - Up to 20 Employees, and - UGX 3,000 per additional employee",
+        "UGX 100,000 /month - Up to 20 Employees, and UGX 3,000 per additional employee",
       offer_list: [
         {
           text: "Earned Wages On Demand",
