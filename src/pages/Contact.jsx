@@ -6,7 +6,7 @@ import Accordion from "../components/Accordion";
 
 const Contact = () => {
   return (
-    <Layout>
+    <>
       <section className="section banner-contact">
         <div className="container">
           <div className="banner-1">
@@ -383,7 +383,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
