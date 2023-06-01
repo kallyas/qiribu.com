@@ -35,7 +35,7 @@ const PricingCard = ({ offer }) => {
         </div>
         <div className="mt-20">
           <Link to="#" className="btn btn-brand-1-full hover-up" href="#">
-            Get Started
+            Request Demo
             <Arrow svgStyle="w-6 h-6 icon-16 ml-10" />
           </Link>
         </div>

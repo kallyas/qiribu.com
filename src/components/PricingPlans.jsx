@@ -63,9 +63,9 @@ const PricingPlans = () => {
     {
       title: "Qiribu Enterprise",
       description: "For large businesses",
-      image: "enterprise.png",
+      image: "enterprise_plan.svg",
       price:
-        "UGX 100,000 /month - Up to 20 Employees, and UGX 3,000 per additional employee",
+        "UGX 100,000 /month - Up to 20 Employees, \nand UGX 3,000 per additional employee",
       offer_list: [
         {
           text: "Earned Wages On Demand",

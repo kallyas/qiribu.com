@@ -9,6 +9,7 @@ import OfferCard from "../components/OfferCard";
 import "swiper/css";
 import "swiper/css/pagination";
 import PricingPlans from "../components/PricingPlans";
+import TabLink from "../components/TabLink";
 
 const Home = () => {
   const offers = [
@@ -160,9 +161,6 @@ const Home = () => {
               </div>
               <div className="col-xl-6 col-lg-6">
                 <div className="box-info-video">
-                  <span className="btn btn-tag wow animate__ animate__fadeInUp animated">
-                    😊
-                  </span>
                   <h3 className="color-brand-2 mt-10 mb-15 wow animate__ animate__fadeInUp animated">
                     Instantly Access What You Have Earned - No Waiting, No
                     Hidden Costs
@@ -199,6 +197,68 @@ const Home = () => {
         </div>
       </section>
       <PricingPlans />
+      <section className="section pt-80 mb-30 bg-faqs">
+        <div className="container">
+          <div className="row align-items-end">
+            <div className="col-lg-8 col-md-8">
+              <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
+                Frequently asked questions
+              </h2>
+              <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
+                Feeling inquisitive? Have a read through some of our FAQs or
+                <br className="d-none d-lg-block" /> contact our supporters for
+                help
+              </p>
+            </div>
+            <div className="col-lg-4 col-md-4 text-md-end text-start wow animate__ animate__fadeInUp animated">
+              <Link to="/contact" className="btn btn-default font-sm-bold pl-0">
+                Contact Us
+                <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
+              </Link>
+            </div>
+          </div>
+          <div className="row mt-50 mb-100">
+            <div className="col-xl-3 col-lg-4">
+              <ul className="list-faqs nav nav-tabs" role="tablist">
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <TabLink
+                    key={index}
+                    href={`#tab-${index}`}
+                    isActive={index === 0}
+                    label={`Tab ${index + 1}`}
+                  />
+                ))}
+              </ul>
+              <div className="mt-80 text-start mb-40 wow animate__ animate__fadeInUp animated">
+                <Link className="btn btn-brand-1 hover-up" to="/contact">
+                  Contact Us
+                </Link>
+                <Link className="btn btn-default font-sm-bold hover-up" to="#">
+                  Request Demo
+                  <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="border-bottom"></div>
+      </section>
+      <section className="section mt-50 mb-30">
+        <div className="container">
+          <div className="text-center mb-70">
+            <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
+              Offering earned wages on demand makes business sense
+            </h2>
+          </div>
+          <div className="row mt-50 mb-100">
+            <div className="col-xl-7 col-lg-6">
+              <div className="box-images-project">
+                <div className="box-images mt-50"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
