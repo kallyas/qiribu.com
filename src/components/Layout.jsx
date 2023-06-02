@@ -32,7 +32,7 @@ export const scrollUpStyle = {
   zIndex: "999 !important",
   border: "0",
   transitionDuration: "0.2s",
-  backgroundColor: "#024430",
+  backgroundColor: "#FF7469",
 };
 
 export default Layout;

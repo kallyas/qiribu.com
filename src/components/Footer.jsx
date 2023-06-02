@@ -37,24 +37,16 @@ const Footer = () => {
             <div className="col-lg-3 width-16 mb-30">
               <h5 className="mb-10 color-brand-1">About Us</h5>
               <ul className="menu-footer">
-                <li>
-                  <Link to="about">Mission &amp; Vision</Link>
-                </li>
-                <li>
-                  <Link to="team">Our Team</Link>
-                </li>
-                <li>
-                  <Link to="career">Careers</Link>
-                </li>
-                <li>
-                  <Link to="#">Press &amp; Media</Link>
-                </li>
-                <li>
-                  <Link to="#">Advertising</Link>
-                </li>
-                <li>
-                  <Link to="#">Testimonials</Link>
-                </li>
+                {[
+                  { name: "Mission & Vision", link: "about" },
+                  { name: "Terms and Conditions", link: "term-conditions" },
+                  { name: "Privacy policy", link: "privacy-policy" },
+                  { name: "Discloures", link: "discloures" },
+                ].map((item, index) => (
+                  <li key={index}>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="col-lg-3 width-16 mb-30"></div>
