@@ -10,6 +10,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import PricingPlans from "../components/PricingPlans";
 import TabLink from "../components/TabLink";
+import CheckMark from "../components/icons/CheckMark";
+import BottomSection from "../components/BottomSection";
+import TestimonialCard from "../components/TestimonialCard";
+import { testimonials } from "../data/testimonials";
+
+const benefits = [
+  "Reduce Financial Stress",
+  "Boost Productivity",
+  "Cut Turnover Costs",
+  "Enhance Company Reputation",
+  "Attract Top Talent",
+  "Foster High Employee Morale",
+];
 
 const Home = () => {
   const offers = [
@@ -253,7 +266,173 @@ const Home = () => {
           <div className="row mt-50 mb-100">
             <div className="col-xl-7 col-lg-6">
               <div className="box-images-project">
-                <div className="box-images mt-50"></div>
+                <div className="box-images mt-50">
+                  <img className="img-main-2" src="oval_image.png" alt="img" />
+                  <div className="image-2 shape-3">
+                    <img
+                      style={{ maxWidth: "100px", borderRadius: "50%" }}
+                      src="circle_logo.svg"
+                      alt="qiribu"
+                    />
+                  </div>
+                  <div className="image-3 shape-1">
+                    <img
+                      src="circle_image.png"
+                      alt="qiribu"
+                      style={{ borderRadius: "50%", objectFit: "cover" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-5 col-lg-6">
+              <span className="btn btn-tag wow animate__ animate__fadeInUp animated">
+                Employer
+              </span>
+              <h3 className="color-brand-1 mt-10 mb-15 wow animate__ animate__fadeInUp animated">
+                Qiribu helps teams of all sizes to grow and reach their
+                objectives
+              </h3>
+              <p className="font-md color-grey-400 wow animate__ animate__fadeInUp animated">
+                Providing earned wages on demand as an employee benefit just
+                makes good financial sense for businesses. It shows you care
+                about your employees' well-being, boosts loyalty, and attracts
+                top talent, all leading to increased profitability and a
+                positive company image.
+              </p>
+              <div className="mt-20 wow animate__ animate__fadeInUp animated">
+                <ul className="list-ticks">
+                  {benefits.map((item, index) => (
+                    <li key={index}>
+                      <CheckMark />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-50 text-start wow animate__ animate__fadeInUp animated">
+                <Link className="btn btn-brand-1 hover-up" to="#">
+                  Download App
+                </Link>
+                <Link className="btn btn-default font-sm-bold hover-up" to="#">
+                  Learn More
+                  <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <BottomSection />
+        </div>
+        <div className="border-bottom"></div>
+      </section>
+      <section className="section mt-50 bg-plant">
+        <div className="container">
+          <div className="row align-items-end">
+            <div className="col-lg-8 col-md-8">
+              <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
+                What our clients are saying
+              </h2>
+              <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
+                Hear from business who have boosted their businesses with Qiribu
+              </p>
+            </div>
+          </div>
+          <div className="mt-50 wow animate__ animate__fadeInUp animated">
+            <div className="box-swiper">
+              <Swiper
+                spaceBetween={30}
+                slidesPerView={3}
+                navigation
+                autoplay={{ delay: 5000 }}
+                pagination={{ clickable: true }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                  },
+                  992: {
+                    slidesPerView: 3,
+                  },
+                }}
+              >
+                {testimonials.map((t, index) => (
+                  <SwiperSlide key={index}>
+                    <TestimonialCard key={index} data={t} />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section mt-50">
+        <div className="container">
+          <div className="row align-items-end">
+            <div className="col-lg-8 col-md-8">
+              <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
+                From our blog
+              </h2>
+              <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
+                Check out our helpful articles on financial planning,
+                <br className="d-none d-lg-block" />
+                enterprise development and payroll processing
+              </p>
+            </div>
+            <div className="col-lg-4 col-md-4 text-md-end text-start">
+              <Link
+                className="btn btn-default font-sm-bold pl-0 wow animate__ animate__fadeInUp animated"
+                to="#"
+              >
+                <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
+                View All
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section mt-50">
+        <div className="container">
+          <div className="box-newsletter">
+            <div className="row align-items-center">
+              <div className="col-lg-5 col-md-12">
+                <div className="box-image-newsletter">
+                  <div className="wow animate__ animate__zoomIn animated">
+                    <img
+                      className="img-main"
+                      src="footer_image.png"
+                      alt="qiribu subscribe"
+                    />
+                  </div>
+                  <div className="shape-2 image-1">
+                    <img
+                      style={{ maxWidth: "100px", borderRadius: "50%" }}
+                      src="small_circle_logo.png"
+                      alt="qiribu subscribe"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12">
+                <span className="font-lg color-brand-1 wow animate__ animate__fadeIn animated">
+                  Newsletter
+                </span>
+                <h2 className="color-brand-1 mb-15 mt-5 wow animate__ animate__fadeIn animated">
+                  Subcribe our newsletter
+                </h2>
+                <p className="font-md color-grey-500 wow animate__ animate__fadeIn animated">
+                  By clicking the button, you are agreeing with our Term &amp;
+                  Conditions
+                </p>
+                <div className="form-newsletter mt-30 wow animate__ animate__fadeIn animated">
+                  <form action="#">
+                    <input type="text" placeholder="Enter you mail .." />
+                    <button className="btn btn-submit-newsletter" type="submit">
+                      <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

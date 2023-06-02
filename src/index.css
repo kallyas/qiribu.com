@@ -1641,7 +1641,7 @@ body {
   width: 100%;
   padding: 30px 30px 20px 30px;
   border: 1px solid #F1D2D0;
-  background: #fff url(../imgs/page/homepage1/quote.svg) no-repeat top 20px right 30px;
+  background: #fff url(../quote.svg) no-repeat top 20px right 30px;
   transition-duration: 0.2s;
 }
 .card-testimonial-grid a {
@@ -2225,7 +2225,7 @@ body {
 .card-review .card-info {
   position: relative;
   padding-left: 64px;
-  background: url(../imgs/page/homepage7/quote.png) no-repeat top left;
+  background: url(../quote.png) no-repeat top left;
 }
 .card-review .card-info .rating-review {
   margin-bottom: 10px;
@@ -6503,7 +6503,7 @@ footer a {
 }
 .box-item-comment .info-comment .comment-quote {
   padding-right: 40px;
-  background: url(../imgs/page/homepage8/quote.png) no-repeat top right;
+  background: url(../quote.png) no-repeat top right;
   max-width: 375px;
 }
 
