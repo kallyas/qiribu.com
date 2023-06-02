@@ -12,22 +12,19 @@ const Contact = () => {
           <div className="banner-1">
             <div className="row align-items-center">
               <div className="col-lg-7">
-                <span className="title-line line-48">Get in Touch</span>
+                <span className="title-line line-48">
+                  Get in touch with us.
+                </span>
                 <h1 className="color-brand-1 mb-20 mt-10">
-                  We’d love to hear
+                  We&apos;d love to hear
                   <br className="d-none d-lg-block" />
                   from you.
                 </h1>
                 <div className="row">
                   <div className="col-lg-9">
                     <p className="font-md color-grey-500">
-                      Request a demo, ask a question, or get in touch here. If
-                      you’re interested in working at Iori Coporation, check out
-                      our
-                      <Link className="ml-3" to="/careers">
-                        {" "}
-                        careers page.
-                      </Link>
+                      Find out how Qiribu can help supercharge your team and
+                      grow your business.
                     </p>
                   </div>
                 </div>
@@ -35,30 +32,18 @@ const Contact = () => {
                   <h5 className="color-brand-1">Install App</h5>
                 </div>
                 <div className="box-button mt-20">
-                  <Link className="btn-app mb-15 hover-up" to="#">
-                    <img
-                      src="assets/imgs/template/appstore-btn.png"
-                      alt="qiribu"
-                    />
-                  </Link>
-                  <Link className="btn-app mb-15 hover-up" to="#">
-                    <img
-                      src="assets/imgs/template/google-play-btn.png"
-                      alt="qiribu"
-                    />
-                  </Link>
                   <Link
-                    className="btn btn-default mb-15 pl-10 font-sm-bold hover-up"
-                    to="#"
+                    target="_blank"
+                    to="https://play.google.com/store/apps/details?id=com.qiribu"
+                    className="btn-app mb-15 hover-up"
                   >
-                    Learn More
-                    <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
+                    <img src="google-play.png" alt="qiribu" />
                   </Link>
                 </div>
               </div>
               <div className="col-lg-5 d-none d-lg-block">
                 <div className="box-banner-contact">
-                  <img src="assets/imgs/page/contact/banner.png" alt="qiribu" />
+                  <img src="contact_hero_image.svg" alt="qiribu" />
                 </div>
               </div>
             </div>
@@ -68,41 +53,34 @@ const Contact = () => {
       <section className="section mt-100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="card-small card-small-2">
                 <div className="card-image">
                   <div className="box-image">
-                    <img
-                      src="assets/imgs/page/contact/headphone.png"
-                      alt="qiribu"
-                    />
+                    <img src="support_icon.svg" alt="qiribu" />
                   </div>
                 </div>
                 <div className="card-info">
                   <h6 className="color-brand-1 mb-10">Help &amp; support</h6>
                   <p className="font-xs color-grey-500">
-                    Email{" "}
+                    Email:{" "}
                     <a
                       className="color-success"
                       href="mailto:support@qiribu.com"
                     >
-                      support@qiribu.com{" "}
+                      support@qiribu.com
                     </a>
                     <br />
-                    For help with a current product or service or refer to FAQs
-                    and developer tools
+                    For technical support with our products or refer to FAQs
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="card-small card-small-2">
                 <div className="card-image">
                   <div className="box-image">
-                    <img
-                      src="assets/imgs/page/contact/phone.png"
-                      alt="qiribu"
-                    />
+                    <img src="call_us.svg" alt="qiribu" />
                   </div>
                 </div>
                 <div className="card-info">
@@ -110,51 +88,25 @@ const Contact = () => {
                   <p className="font-xs color-grey-500">
                     Call us to speak to a member of our team.
                     <br />
-                    (+01) 234 567 89
-                    <br />
-                    (+01) 456 789 21
+                    (+256) 0 786 881 540
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="card-small card-small-2">
                 <div className="card-image">
                   <div className="box-image">
-                    <img
-                      src="assets/imgs/page/contact/chart.png"
-                      alt="qiribu"
-                    />
+                    <img src="business_development.svg" alt="qiribu" />
                   </div>
                 </div>
                 <div className="card-info">
-                  <h6 className="color-brand-1 mb-10">Bussiness Department</h6>
+                  <h6 className="color-brand-1 mb-10">Bussiness Development</h6>
                   <p className="font-xs color-grey-500">
-                    Contact the sales department about cooperation projects
+                    Contact the sales department about colloborations and
+                    partnerships
                     <br />
-                    (+01) 789 456 23
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="card-small card-small-2">
-                <div className="card-image">
-                  <div className="box-image">
-                    <img
-                      src="assets/imgs/page/contact/earth.png"
-                      alt="qiribu"
-                    />
-                  </div>
-                </div>
-                <div className="card-info">
-                  <h6 className="color-brand-1 mb-10">Global branch</h6>
-                  <p className="font-xs color-grey-500">
-                    Contact us to open our branches globally.
-                    <br />
-                    (+01) 234 567 89
-                    <br />
-                    (+01) 456 789 23
+                    (+256) 0 786 881 540
                   </p>
                 </div>
               </div>
@@ -173,21 +125,19 @@ const Contact = () => {
               <div className="mt-50">
                 <div className="card-offer card-we-do card-contact hover-up">
                   <div className="card-image">
-                    <img src="assets/imgs/page/contact/img1.png" alt="qiribu" />
+                    <img src="blog.svg" alt="qiribu" />
                   </div>
                   <div className="card-info">
-                    <h6 className="color-brand-1 mb-10">
-                      Visit the Knowledge Base
-                    </h6>
+                    <h6 className="color-brand-1 mb-10">Visit Our Blog</h6>
                     <p className="font-md color-grey-500 mb-5">
-                      Browse customer support articles and step-by-step
-                      instructions for specific features.
+                      Browse articles on how to take control of your financial
+                      health.
                     </p>
                   </div>
                 </div>
                 <div className="card-offer card-we-do card-contact hover-up">
                   <div className="card-image">
-                    <img src="assets/imgs/page/contact/img2.png" alt="qiribu" />
+                    <img src="video.svg" alt="qiribu" />
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">
@@ -201,14 +151,14 @@ const Contact = () => {
                 </div>
                 <div className="card-offer card-we-do card-contact hover-up">
                   <div className="card-image">
-                    <img src="assets/imgs/page/contact/img3.png" alt="qiribu" />
+                    <img src="sales_team.svg" alt="qiribu" />
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">
                       Get in touch with Sales
                     </h6>
                     <p className="font-md color-grey-500 mb-5">
-                      Let us talk about how we can help your enterprise.
+                      Let us talk about how we can help your business.
                     </p>
                   </div>
                 </div>
