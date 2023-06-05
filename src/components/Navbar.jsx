@@ -69,7 +69,7 @@ const Navbar = () => {
             <div className="header-right">
               <div className="d-none d-sm-inline-block">
                 <Link className="btn btn-brand-1 hover-up" to="/register">
-                  Book a Demo
+                  Request Demo
                 </Link>
               </div>
             </div>

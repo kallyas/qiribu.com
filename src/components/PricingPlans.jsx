@@ -7,7 +7,7 @@ const PricingPlans = () => {
       title: "Qiribu Basic",
       image: "basic_plan.png",
       description: "For small businesses",
-      price: "FREE - Sign up & register your employees No Credit Card Required",
+      price: "FREE - Sign up & register your employees",
       offer_list: [
         {
           text: "Earned Wages On Demand",
