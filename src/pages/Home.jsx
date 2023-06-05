@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import { Link } from "react-router-dom";
 import { Autoplay, Pagination } from "swiper";
@@ -14,6 +14,7 @@ import CheckMark from "../components/icons/CheckMark";
 import BottomSection from "../components/BottomSection";
 import TestimonialCard from "../components/TestimonialCard";
 import { testimonials } from "../data/testimonials";
+import Accordion from "../components/Accordion";
 
 const benefits = [
   "Reduce Financial Stress",
@@ -25,6 +26,7 @@ const benefits = [
 ];
 
 const Home = () => {
+  const [accordionOpen, setAccordionOpen] = useState(false);
   const offers = [
     {
       title: "Earned Wages On Demand",
@@ -119,6 +121,15 @@ const Home = () => {
                       />
                     </Link>
                   </SwiperSlide>
+                  {[...Array(6)].map((_, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        style={{ maxWidth: "50px" }}
+                        src={`${index + 1}.png`}
+                        alt="logo"
+                      />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
             </div>
@@ -130,10 +141,10 @@ const Home = () => {
           <div className="row align-items-end">
             <div className="col-lg-8 col-md-8">
               <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
-                What we Offer
+                What We Offer
               </h2>
               <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
-                We have the right solutions to suite businesses of any size.
+                We have the right solutions to suit businesses of any size
               </p>
             </div>
             <div className="col-lg-4 col-md-4 text-md-end text-start">
@@ -215,7 +226,7 @@ const Home = () => {
           <div className="row align-items-end">
             <div className="col-lg-8 col-md-8">
               <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
-                Frequently asked questions
+                Frequently Asked Questions
               </h2>
               <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
                 Feeling inquisitive? Have a read through some of our FAQs or
@@ -233,12 +244,12 @@ const Home = () => {
           <div className="row mt-50 mb-100">
             <div className="col-xl-3 col-lg-4">
               <ul className="list-faqs nav nav-tabs" role="tablist">
-                {Array.from({ length: 4 }).map((_, index) => (
+                {Array.from({ length: 1 }).map((_, index) => (
                   <TabLink
                     key={index}
                     href={`#tab-${index}`}
                     isActive={index === 0}
-                    label={`Tab ${index + 1}`}
+                    label="General Questions"
                   />
                 ))}
               </ul>
@@ -250,6 +261,13 @@ const Home = () => {
                   Request Demo
                   <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
                 </Link>
+              </div>
+            </div>
+            <div className="col-xl-9 col-lg-8">
+              <div className="tab-content tab-content-slider">
+                <div className="tab-pane fade active show" role="tabpanel">
+                  <Accordion />
+                </div>
               </div>
             </div>
           </div>
@@ -372,7 +390,7 @@ const Home = () => {
           <div className="row align-items-end">
             <div className="col-lg-8 col-md-8">
               <h2 className="color-brand-1 mb-20 wow animate__ animate__fadeInUp animated">
-                From our blog
+                From Our Blog
               </h2>
               <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
                 Check out our helpful articles on financial planning,
@@ -419,7 +437,7 @@ const Home = () => {
                   Newsletter
                 </span>
                 <h2 className="color-brand-1 mb-15 mt-5 wow animate__ animate__fadeIn animated">
-                  Subcribe our newsletter
+                  Subcribe to our newsletter
                 </h2>
                 <p className="font-md color-grey-500 wow animate__ animate__fadeIn animated">
                   By clicking the button, you are agreeing with our Term &amp;

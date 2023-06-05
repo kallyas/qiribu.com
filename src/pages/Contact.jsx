@@ -12,13 +12,8 @@ const Contact = () => {
           <div className="banner-1">
             <div className="row align-items-center">
               <div className="col-lg-7">
-                <span className="title-line line-48">
-                  Get in touch with us.
-                </span>
                 <h1 className="color-brand-1 mb-20 mt-10">
-                  We&apos;d love to hear
-                  <br className="d-none d-lg-block" />
-                  from you.
+                  Get in touch with us
                 </h1>
                 <div className="row">
                   <div className="col-lg-9">
@@ -43,7 +38,7 @@ const Contact = () => {
               </div>
               <div className="col-lg-5 d-none d-lg-block">
                 <div className="box-banner-contact">
-                  <img src="contact_hero_image.svg" alt="qiribu" />
+                  <img src="contact_hero_image.png" alt="qiribu" />
                 </div>
               </div>
             </div>
@@ -57,7 +52,7 @@ const Contact = () => {
               <div className="card-small card-small-2">
                 <div className="card-image">
                   <div className="box-image">
-                    <img src="support_icon.svg" alt="qiribu" />
+                    <img src="support_icon.png" alt="qiribu" />
                   </div>
                 </div>
                 <div className="card-info">
@@ -80,7 +75,7 @@ const Contact = () => {
               <div className="card-small card-small-2">
                 <div className="card-image">
                   <div className="box-image">
-                    <img src="call_us.svg" alt="qiribu" />
+                    <img src="call_us.png" alt="qiribu" />
                   </div>
                 </div>
                 <div className="card-info">
@@ -97,7 +92,7 @@ const Contact = () => {
               <div className="card-small card-small-2">
                 <div className="card-image">
                   <div className="box-image">
-                    <img src="business_development.svg" alt="qiribu" />
+                    <img src="business_development.png" alt="qiribu" />
                   </div>
                 </div>
                 <div className="card-info">
@@ -125,7 +120,7 @@ const Contact = () => {
               <div className="mt-50">
                 <div className="card-offer card-we-do card-contact hover-up">
                   <div className="card-image">
-                    <img src="blog.svg" alt="qiribu" />
+                    <img src="blog.png" alt="qiribu" />
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">Visit Our Blog</h6>
@@ -137,7 +132,7 @@ const Contact = () => {
                 </div>
                 <div className="card-offer card-we-do card-contact hover-up">
                   <div className="card-image">
-                    <img src="video.svg" alt="qiribu" />
+                    <img src="video.png" alt="qiribu" />
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">
@@ -151,7 +146,7 @@ const Contact = () => {
                 </div>
                 <div className="card-offer card-we-do card-contact hover-up">
                   <div className="card-image">
-                    <img src="sales_team.svg" alt="qiribu" />
+                    <img src="sales_team.png" alt="qiribu" />
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">
@@ -172,7 +167,7 @@ const Contact = () => {
                       <input
                         className="form-control icon-user"
                         type="text"
-                        placeholder="Your name"
+                        placeholder="Full Name"
                       />
                     </div>
                   </div>
@@ -208,16 +203,9 @@ const Contact = () => {
                       <input
                         className="form-control"
                         type="text"
-                        placeholder="Subject"
+                        pattern="[0-9]*"
+                        placeholder="Company Size"
                       />
-                    </div>
-                  </div>
-                  <div className="col-lg-12">
-                    <div className="form-group mb-25">
-                      <textarea
-                        className="form-control textarea-control"
-                        placeholder="Write something"
-                      ></textarea>
                     </div>
                   </div>
                   <div className="col-xl-4 col-lg-5 col-md-5 col-sm-6 col-9">
@@ -226,7 +214,7 @@ const Contact = () => {
                         className="btn btn-brand-1-full font-sm"
                         type="submit"
                       >
-                        Send message
+                        Request a Demo
                         <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
                       </button>
                     </div>
@@ -293,12 +281,7 @@ const Contact = () => {
                   aria-labelledby="tab-support"
                 >
                   <div className="tab-pane fade active show">
-                    <div className="accordion" id="accordionFAQ">
-                      <Accordion
-                        title="How do I get started?"
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                      />
-                    </div>
+                    <Accordion />
                   </div>
                 </div>
               </div>
@@ -313,7 +296,7 @@ const Contact = () => {
               <div className="col-lg-6 col-md-7 m-auto text-center">
                 <span className="font-lg color-brand-1">Newsletter</span>
                 <h2 className="color-brand-1 mb-15 mt-5">
-                  Subcribe our newsletter
+                  Subcribe to our newsletter
                 </h2>
                 <p className="font-md color-grey-500">
                   Do not miss the latest information from us about the trending
