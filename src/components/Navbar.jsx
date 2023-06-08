@@ -13,10 +13,6 @@ const Navbar = () => {
       hasChildren: true,
       children: [
         {
-          name: "About",
-          link: "/about",
-        },
-        {
           name: "Terms & Conditions",
           link: "/terms",
         },
@@ -68,7 +64,7 @@ const Navbar = () => {
             </div>
             <div className="header-right">
               <div className="d-none d-sm-inline-block">
-                <Link className="btn btn-brand-1 hover-up" to="/register">
+                <Link className="btn btn-brand-1 hover-up" to="/contact">
                   Request Demo
                 </Link>
               </div>

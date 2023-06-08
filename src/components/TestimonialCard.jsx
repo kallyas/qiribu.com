@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const TestimonialCard = ({ data }) => {
-  const { author, company, date, rating, content } = data;
+  const { author, company, date, rating, content, image } = data;
   return (
     <div className="card-testimonial-grid">
       <div className="box-author mb-10">
         <Link to="#">
-          <img src="https://via.placeholder.com/150" alt="author" />
+          <img src={image} alt="author" />
         </Link>
         <div className="author-info">
           <Link to="#">

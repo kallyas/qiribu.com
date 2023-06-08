@@ -32,7 +32,11 @@ const Contact = () => {
                     to="https://play.google.com/store/apps/details?id=com.qiribu"
                     className="btn-app mb-15 hover-up"
                   >
-                    <img src="google-play.png" alt="qiribu" />
+                    <img
+                      src="google_play.png"
+                      style={{ maxWidth: "150px" }}
+                      alt="qiribu"
+                    />
                   </Link>
                 </div>
               </div>

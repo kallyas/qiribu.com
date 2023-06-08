@@ -55,13 +55,21 @@ const Footer = () => {
               <div>
                 <div className="mt-20">
                   <Link className="mr-10" to="#">
-                    <img src="appstore.png" alt="Qiribu" />
+                    <img
+                      src="apple_store.png"
+                      style={{ maxWidth: "200px" }}
+                      alt="Qiribu"
+                    />
                   </Link>
                   <Link
                     target="_blank"
                     to="https://play.google.com/store/apps/details?id=com.qiribu"
                   >
-                    <img src="google-play.png" alt="Qiribu" />
+                    <img
+                      src="google_play.png"
+                      style={{ maxWidth: "200px" }}
+                      alt="Qiribu"
+                    />
                   </Link>
                 </div>
               </div>

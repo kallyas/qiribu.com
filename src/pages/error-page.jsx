@@ -55,35 +55,34 @@ const ErrorPage = () => {
         <section className="section mt-100">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 col-md-6 col-sm-6">
+              <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img src="headphone.png" alt="qiribu" />
+                      <img src="support_icon.png" alt="qiribu" />
                     </div>
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">Help &amp; support</h6>
                     <p className="font-xs color-grey-500">
-                      Email{" "}
+                      Email:{" "}
                       <a
                         className="color-success"
                         href="mailto:support@qiribu.com"
                       >
-                        support@qiribu.com{" "}
+                        support@qiribu.com
                       </a>
                       <br />
-                      For help with a current product or service or refer to
-                      FAQs and developer tools
+                      For technical support with our products or refer to FAQs
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6">
+              <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img src="phone.png" alt="qiribu" />
+                      <img src="call_us.png" alt="qiribu" />
                     </div>
                   </div>
                   <div className="card-info">
@@ -91,47 +90,27 @@ const ErrorPage = () => {
                     <p className="font-xs color-grey-500">
                       Call us to speak to a member of our team.
                       <br />
-                      (+01) 234 567 89
-                      <br />
-                      (+01) 456 789 21
+                      (+256) 0 786 881 540
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6">
+              <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="card-small card-small-2">
                   <div className="card-image">
                     <div className="box-image">
-                      <img src="chart.png" alt="qiribu" />
+                      <img src="business_development.png" alt="qiribu" />
                     </div>
                   </div>
                   <div className="card-info">
                     <h6 className="color-brand-1 mb-10">
-                      Bussiness Department
+                      Bussiness Development
                     </h6>
                     <p className="font-xs color-grey-500">
-                      Contact the sales department about cooperation projects
+                      Contact the sales department about colloborations and
+                      partnerships
                       <br />
-                      (+01) 789 456 23
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-6 col-sm-6">
-                <div className="card-small card-small-2">
-                  <div className="card-image">
-                    <div className="box-image">
-                      <img src="earth.png" alt="qiribu" />
-                    </div>
-                  </div>
-                  <div className="card-info">
-                    <h6 className="color-brand-1 mb-10">Global branch</h6>
-                    <p className="font-xs color-grey-500">
-                      Contact us to open our branches globally.
-                      <br />
-                      (+01) 234 567 89
-                      <br />
-                      (+01) 456 789 23
+                      (+256) 0 786 881 540
                     </p>
                   </div>
                 </div>

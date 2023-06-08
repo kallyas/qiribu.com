@@ -68,7 +68,9 @@ const Home = () => {
               <h3 className="color-brand-1 mb-15 wow animate__ animate__fadeInUp animated">
                 Loved by Employees, Trusted by Employers
               </h3>
-              <p className="font-lg color-grey-500 wow animate__ animate__fadeInUp animated"></p>
+              <p className="font-lg color-grey-500 wow animate__ animate__fadeInUp animated">
+                As featured in
+              </p>
             </div>
             <div className="mt-30 wow animate__ animate__fadeInUp animated">
               <div className="box-swiper">
@@ -103,7 +105,7 @@ const Home = () => {
                     },
                   }}
                 >
-                  <SwiperSlide>
+                  {/* <SwiperSlide>
                     <Link target="_blank" to="https://starthubafrica.org/">
                       <img
                         style={{ maxWidth: "50px" }}
@@ -120,11 +122,11 @@ const Home = () => {
                         alt="Cabbily"
                       />
                     </Link>
-                  </SwiperSlide>
-                  {[...Array(6)].map((_, index) => (
+                  </SwiperSlide> */}
+                  {[...Array(3)].map((_, index) => (
                     <SwiperSlide key={index}>
                       <img
-                        style={{ maxWidth: "50px" }}
+                        style={{ maxWidth: "100px" }}
                         src={`${index + 1}.png`}
                         alt="logo"
                       />
