@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -23,8 +25,24 @@ const Navbar = () => {
       link: "/contact",
     },
   ];
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 200);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="header sticky-bar">
+    <div className={`header sticky-bar ${isSticky ? "stick" : ""}`}>
       <div className="container">
         <div className="main-header">
           <div className="header-left">

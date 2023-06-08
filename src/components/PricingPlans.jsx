@@ -15,7 +15,7 @@ const PricingPlans = () => {
         },
         {
           text: "Qiribu Card",
-          is_checked: true,
+          is_checked: false,
         },
         {
           text: "Payroll Processing",

@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Arrow from "./icons/Arrow";
 
-const TabLink = ({ href, isActive, label }) => {
+const TabLink = ({ activeTab, setTab, href, isActive, label }) => {
   return (
-    <li
-      className={`wow animate__fadeInUp animated ${isActive ? "active" : ""}`}
-    >
+    <li className={`wow animate__fadeInUp animated ${isActive ? "active" : ""}`}>
       <Link
+        onClick={() => setTab(label)}
         className={`active`}
         to={href}
         data-bs-toggle="tab"

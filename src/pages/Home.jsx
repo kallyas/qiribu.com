@@ -25,8 +25,10 @@ const benefits = [
   "Foster High Employee Morale",
 ];
 
+const tabs = ["General Enquiries", "Employers", "Employees"];
+
 const Home = () => {
-  const [accordionOpen, setAccordionOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("General Enquiries");
   const offers = [
     {
       title: "Earned Wages On Demand",
@@ -57,6 +59,10 @@ const Home = () => {
       image: "smart_budgets.png",
     },
   ];
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
     <>
@@ -125,11 +131,7 @@ const Home = () => {
                   </SwiperSlide> */}
                   {[...Array(3)].map((_, index) => (
                     <SwiperSlide key={index}>
-                      <img
-                        style={{ maxWidth: "100px" }}
-                        src={`${index + 1}.png`}
-                        alt="logo"
-                      />
+                      <img style={{ maxWidth: "100px" }} src={`${index + 1}.png`} alt="logo" />
                     </SwiperSlide>
                   ))}
                 </Swiper>
@@ -178,33 +180,26 @@ const Home = () => {
                     clipPath: "polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%)",
                   }}
                 >
-                  <img
-                    className="d-block"
-                    src="employee_image.png"
-                    alt="video"
-                  />
+                  <img className="d-block" src="employee_image.png" alt="video" />
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6">
                 <div className="box-info-video">
                   <h3 className="color-brand-2 mt-10 mb-15 wow animate__ animate__fadeInUp animated">
-                    Instantly Access What You Have Earned - No Waiting, No
-                    Hidden Costs
+                    Instantly Access What You Have Earned - No Waiting, No Hidden Costs
                   </h3>
                   <p className="font-md color-white wow animate__ animate__fadeInUp animated">
-                    Don't wait for payday to handle unexpected expenses! Qiribu
-                    enables employees to instantly access a portion of their
-                    earned wage at zero interest and no hidden costs. Employers
-                    enjoy this free benefit, while employees pay a minimal fee
-                    for fund transfers. Boost performance, morale, and reduce
-                    turnover for business success.
+                    Don't wait for payday to handle unexpected expenses! Qiribu enables employees to
+                    instantly access a portion of their earned wage at zero interest and no hidden
+                    costs. Employers enjoy this free benefit, while employees pay a minimal fee for
+                    fund transfers. Boost performance, morale, and reduce turnover for business
+                    success.
                     <Link
                       to="https://www.benefitnews.com/opinion/earned-wage-access-the-most-important-benefit-in-a-post-covid-19-world"
                       target="_blank"
                       className="btn btn-default font-sm-bold color-white wow animate__ animate__fadeInUp animated"
                     >
-                      Learn More{" "}
-                      <Arrow svgStyle="w-6 h-6 icon-16 ml-5 color-white" />
+                      Learn More <Arrow svgStyle="w-6 h-6 icon-16 ml-5 color-white" />
                     </Link>
                   </p>
                   <div className="box-button-video wow animate__ animate__fadeInUp animated">
@@ -232,8 +227,7 @@ const Home = () => {
               </h2>
               <p className="font-lg color-gray-500 wow animate__ animate__fadeInUp animated">
                 Feeling inquisitive? Have a read through some of our FAQs or
-                <br className="d-none d-lg-block" /> contact our supporters for
-                help
+                <br className="d-none d-lg-block" /> contact our supporters for help
               </p>
             </div>
             <div className="col-lg-4 col-md-4 text-md-end text-start wow animate__ animate__fadeInUp animated">
@@ -246,12 +240,14 @@ const Home = () => {
           <div className="row mt-50 mb-100">
             <div className="col-xl-3 col-lg-4">
               <ul className="list-faqs nav nav-tabs" role="tablist">
-                {Array.from({ length: 1 }).map((_, index) => (
+                {tabs.map((tab, index) => (
                   <TabLink
+                    activeTab={activeTab}
+                    setTab={handleTabChange}
                     key={index}
                     href={`#tab-${index}`}
                     isActive={index === 0}
-                    label="General Questions"
+                    label={tab}
                   />
                 ))}
               </ul>
@@ -268,7 +264,7 @@ const Home = () => {
             <div className="col-xl-9 col-lg-8">
               <div className="tab-content tab-content-slider">
                 <div className="tab-pane fade active show" role="tabpanel">
-                  <Accordion />
+                  <Accordion activeTab={activeTab} />
                 </div>
               </div>
             </div>
@@ -306,18 +302,14 @@ const Home = () => {
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
-              <span className="btn btn-tag wow animate__ animate__fadeInUp animated">
-                Employer
-              </span>
+              <span className="btn btn-tag wow animate__ animate__fadeInUp animated">Employer</span>
               <h3 className="color-brand-1 mt-10 mb-15 wow animate__ animate__fadeInUp animated">
-                Qiribu helps teams of all sizes to grow and reach their
-                objectives
+                Qiribu helps teams of all sizes to grow and reach their objectives
               </h3>
               <p className="font-md color-grey-400 wow animate__ animate__fadeInUp animated">
-                Providing earned wages on demand as an employee benefit just
-                makes good financial sense for businesses. It shows you care
-                about your employees' well-being, boosts loyalty, and attracts
-                top talent, all leading to increased profitability and a
+                Providing earned wages on demand as an employee benefit just makes good financial
+                sense for businesses. It shows you care about your employees' well-being, boosts
+                loyalty, and attracts top talent, all leading to increased profitability and a
                 positive company image.
               </p>
               <div className="mt-20 wow animate__ animate__fadeInUp animated">
@@ -419,11 +411,7 @@ const Home = () => {
               <div className="col-lg-5 col-md-12">
                 <div className="box-image-newsletter">
                   <div className="wow animate__ animate__zoomIn animated">
-                    <img
-                      className="img-main"
-                      src="footer_image.png"
-                      alt="qiribu subscribe"
-                    />
+                    <img className="img-main" src="footer_image.png" alt="qiribu subscribe" />
                   </div>
                   <div className="shape-2 image-1">
                     <img
@@ -442,8 +430,7 @@ const Home = () => {
                   Subcribe to our newsletter
                 </h2>
                 <p className="font-md color-grey-500 wow animate__ animate__fadeIn animated">
-                  By clicking the button, you are agreeing with our Term &amp;
-                  Conditions
+                  By clicking the button, you are agreeing with our Term &amp; Conditions
                 </p>
                 <div className="form-newsletter mt-30 wow animate__ animate__fadeIn animated">
                   <form action="#">
