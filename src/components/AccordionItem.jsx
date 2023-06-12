@@ -1,29 +1,22 @@
 import React, { useState } from "react";
 
-function AccordionItem({ question, answer }) {
-  const [accordionOpen, setAccordionOpen] = useState(false);
-
+function AccordionItem({ question, answer, isOpen, onToggle }) {
   return (
     <div className="accordion-item wow animate__ animate__fadeInUp">
-      <h5
-        onClick={() => setAccordionOpen((prev) => !prev)}
-        className="accordion-header"
-      >
+      <h5 onClick={onToggle} className="accordion-header">
         <button
-          className={`accordion-button text-heading-5 ${
-            accordionOpen ? "" : "collapsed"
-          }`}
+          className={`accordion-button text-heading-5 ${isOpen ? "" : "collapsed"}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target={`#collapse${question}`}
-          aria-expanded={accordionOpen}
+          aria-expanded={isOpen}
           aria-controls={`collapse${question}`}
         >
           {question}
         </button>
       </h5>
       <div
-        className={`accordion-collapse collapse ${accordionOpen ? "show" : ""}`}
+        className={`accordion-collapse collapse ${isOpen ? "show" : ""}`}
         id={`collapse${question}`}
         data-bs-parent="#accordionFAQ"
       >

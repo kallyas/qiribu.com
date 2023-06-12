@@ -4,7 +4,10 @@ import Arrow from "./icons/Arrow";
 
 const TabLink = ({ activeTab, setTab, href, isActive, label }) => {
   return (
-    <li className={`wow animate__fadeInUp animated ${isActive ? "active" : ""}`}>
+    <li
+      onClick={() => setTab(label)}
+      className={`wow animate__fadeInUp animated ${isActive ? "active" : ""}`}
+    >
       <Link
         onClick={() => setTab(label)}
         className={`active`}

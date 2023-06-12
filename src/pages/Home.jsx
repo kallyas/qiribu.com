@@ -255,7 +255,7 @@ const Home = () => {
                 <Link className="btn btn-brand-1 hover-up" to="/contact">
                   Contact Us
                 </Link>
-                <Link className="btn btn-default font-sm-bold hover-up" to="#">
+                <Link className="btn btn-default font-sm-bold hover-up" to="/contact">
                   Request Demo
                   <Arrow svgStyle="w-6 h-6 icon-16 ml-5" />
                 </Link>
@@ -264,7 +264,9 @@ const Home = () => {
             <div className="col-xl-9 col-lg-8">
               <div className="tab-content tab-content-slider">
                 <div className="tab-pane fade active show" role="tabpanel">
-                  <Accordion activeTab={activeTab} />
+                  {activeTab === "General Enquiries" && <Accordion activeTab={activeTab} />}
+                  {activeTab === "Employers" && <Accordion activeTab={activeTab} />}
+                  {activeTab === "Employees" && <Accordion activeTab={activeTab} />}
                 </div>
               </div>
             </div>
