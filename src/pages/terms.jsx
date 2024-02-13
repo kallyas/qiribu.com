@@ -6,7 +6,7 @@ const TermsPage = () => {
     <div className="section">
       <div className="container">
         <div className="row justify-content-center align-items-center">
-          <div className="col-lg-10">
+          <div className="col-lg-10" style={{ maxWidth: "800px" }}>
             <h2 className="text-center mb-2 mt-2">Terms and Conditions</h2>
             <p>
               <strong>1. DEFINITIONS</strong>
