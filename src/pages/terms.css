@@ -1,0 +1,10 @@
+/* styles specific for terms and conditions, privacy policy */
+
+/* terms and conditions */
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
