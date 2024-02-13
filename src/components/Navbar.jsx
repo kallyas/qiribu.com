@@ -17,7 +17,15 @@ const Navbar = () => {
       children: [
         {
           name: "Terms & Conditions",
-          link: "/terms",
+          link: "/terms-conditions",
+        },
+        {
+          name: "Privacy Policy",
+          link: "/privacy-policy",
+        },
+        {
+          name: "Qiribu Card Policy",
+          link: "/card-policy",
         },
       ],
     },

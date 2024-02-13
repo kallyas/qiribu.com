@@ -22,8 +22,7 @@ const Footer = () => {
                 Kampala, Uganda
               </p>
               <div className="font-md mb-20 color-grey-400">
-                <strong className="font-md-bold">Hours:</strong> 8:00 - 17:00,
-                Mon - Sat
+                <strong className="font-md-bold">Hours:</strong> 8:00 - 17:00, Mon - Sat
               </div>
               <h6 className="color-brand-1">Follow Us</h6>
               <div className="mt-15">
@@ -39,9 +38,9 @@ const Footer = () => {
               <ul className="menu-footer">
                 {[
                   { name: "Mission & Vision", link: "about" },
-                  { name: "Terms and Conditions", link: "term-conditions" },
+                  { name: "Terms and Conditions", link: "terms-conditions" },
                   { name: "Privacy policy", link: "privacy-policy" },
-                  { name: "Discloures", link: "discloures" },
+                  { name: "Qiribu Card policy", link: "card-policy" },
                 ].map((item, index) => (
                   <li key={index}>
                     <Link to={item.link}>{item.name}</Link>
@@ -55,21 +54,13 @@ const Footer = () => {
               <div>
                 <div className="mt-20">
                   <Link className="mr-10" to="#">
-                    <img
-                      src="apple_store.png"
-                      style={{ maxWidth: "200px" }}
-                      alt="Qiribu"
-                    />
+                    <img src="apple_store.png" style={{ maxWidth: "200px" }} alt="Qiribu" />
                   </Link>
                   <Link
                     target="_blank"
                     to="https://play.google.com/store/apps/details?id=com.qiribu"
                   >
-                    <img
-                      src="google_play.png"
-                      style={{ maxWidth: "200px" }}
-                      alt="Qiribu"
-                    />
+                    <img src="google_play.png" style={{ maxWidth: "200px" }} alt="Qiribu" />
                   </Link>
                 </div>
               </div>
@@ -84,26 +75,17 @@ const Footer = () => {
               <div className="col-lg-6 col-md-12 text-center text-lg-start">
                 <ul className="menu-bottom">
                   <li>
-                    <Link
-                      className="font-sm color-grey-300"
-                      to="term-conditions"
-                    >
+                    <Link className="font-sm color-grey-300" to="terms-conditions">
                       Privacy policy
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="font-sm color-grey-300"
-                      to="term-conditions"
-                    >
+                    <Link className="font-sm color-grey-300" to="terms-conditions">
                       Cookies
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      className="font-sm color-grey-300"
-                      to="term-conditions"
-                    >
+                    <Link className="font-sm color-grey-300" to="terms-conditions">
                       Terms of service
                     </Link>
                   </li>
@@ -112,12 +94,10 @@ const Footer = () => {
               <div className="col-lg-6 col-md-12 text-center text-lg-end">
                 <span className="color-grey-300 font-md">
                   © {new Date().getFullYear()} Qiribu. All rights reserved.{" "}
-                  <br className="d-none d-lg-block" /> Qiribu is a Fintech
-                  product enabling salaried <br className="d-none d-lg-block" />{" "}
-                  employees to access a portion of their earned
+                  <br className="d-none d-lg-block" /> Qiribu is a Fintech product enabling salaried{" "}
+                  <br className="d-none d-lg-block" /> employees to access a portion of their earned
                   <br className="d-none d-lg-block" />
-                  wages early. Please contact us for more{" "}
-                  <br className="d-none d-lg-block" />
+                  wages early. Please contact us for more <br className="d-none d-lg-block" />
                   information:
                   <Link to="mailto:hello@qiribu.com">hello@qiribu.com</Link>
                 </span>
